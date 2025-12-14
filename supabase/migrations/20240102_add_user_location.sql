@@ -1,0 +1,5 @@
+-- Add location columns to users table
+ALTER TABLE users ADD COLUMN IF NOT EXISTS latitude FLOAT;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS longitude FLOAT;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS city TEXT;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS country TEXT;
